@@ -1,7 +1,9 @@
+import PageHeader from "@/components/common/page-header";
+
 export default function Dashboard() {
   return(
     <div>
-      <p>Dashboard</p>
+      <PageHeader title="Dashboard" buttonVisible={false} />
     </div>
   )
 }

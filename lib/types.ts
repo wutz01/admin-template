@@ -6,6 +6,17 @@ export type NavigationElement = {
   name: string;
 };
 
+type TransactionTypes = {
+  name: string;
+  stat: string;
+}
+
+export const TRANSACTION_TYPES: TransactionTypes[] = [
+  { name: 'Investments', stat: 'PHP 71,897' },
+  { name: 'Monthly Interest', stat: '0.05%' },
+  { name: 'Monthly Interest in PHP', stat: 'PHP 3594.85' },
+]
+
 export const CLIENTS_NAV: NavigationElement[] = [
   {
     href: "/client/dashboard",
@@ -18,15 +29,15 @@ export const CLIENTS_NAV: NavigationElement[] = [
     name: "Investments",
   },
   {
-    href: "/client/reports",
+    href: "/client/transactions",
     icon: PieChart,
-    name: "Reports",
+    name: "Transactions",
   },
 ];
 
 export const PROFILE_NAV: NavigationElement[] = [
   {
-    href: "/profile",
+    href: "/user/profile",
     icon: LayoutDashboard,
     name: "Profile",
   },
